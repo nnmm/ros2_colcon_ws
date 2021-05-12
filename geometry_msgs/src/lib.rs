@@ -1,3 +1,5 @@
 pub mod msg {
-    pub struct Twist {}
+    pub struct Twist<T: serde::Serialize> {
+        t: T
+    }
 }
